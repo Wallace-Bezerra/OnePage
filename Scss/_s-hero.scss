@@ -1,0 +1,49 @@
+.s-hero {
+    background-color: $purple-light;
+
+    .container {
+        padding-top: 77px;
+        padding-bottom: 119px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .text {
+            max-width: 389px;
+
+            h1 {
+                font-family: 'Merriweather';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 42px;
+                line-height: 47px;
+                color: $gray-dark;
+                margin-bottom: 17.5px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 32px;
+                color: $gray;
+                margin-bottom: 45px;
+            }
+        }
+
+        .image {
+            max-width: 500px;
+            height: 359.75px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    @include responsive(960px) {
+        .container {
+            flex-direction: column;
+            gap: 100px;
+        }
+    }
+}
